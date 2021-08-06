@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - fog
+  - key
+  - LockedDoor
+  - weapon
+  - Tag
+  - leftWall
+  - rightWall
+  - Canvas
+  - Props
+  - OneWayGround
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Ground
+  - post processing
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Lighting
+    uniqueID: 3647891799
+    locked: 0
+  - name: background
+    uniqueID: 3776025611
+    locked: 0
+  - name: higher priority lighting
+    uniqueID: 454754851
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: no lighting
+    uniqueID: 2310220969
+    locked: 0

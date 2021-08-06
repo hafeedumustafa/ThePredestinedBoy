@@ -1,0 +1,910 @@
+fileFormatVersion: 2
+guid: 843ac8989195bc345bedac449e0c50b2
+ScriptedImporter:
+  internalIDToNameTable:
+  - first:
+      213: -246944725193147304
+    second: vine TL
+  - first:
+      213: -1411280925876487892
+    second: vine BR
+  - first:
+      213: 1036237893583929369
+    second: vine TR
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: b2a9591990af98743ba3ff7cf1000886, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 1
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    isReadable: 0
+    streamingMipmaps: 1
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  spriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+  mosaicSpriteImportData: []
+  rigSpriteImportData:
+  - name: Body
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2524
+      y: 4
+      width: 1261
+      height: 907
+    spriteID: 4a3f43c5ff389d54198a9e5ee7338db6
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 2459, y: -507}
+  - name: Inner Core
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1656
+      y: 933
+      width: 576
+      height: 695
+    spriteID: 27444d3be8631ab409f3ff09e4172e3b
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1180, y: 271}
+  - name: Right Arm
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3367
+      y: 938
+      width: 463
+      height: 639
+    spriteID: e8af2ec3c64a7ea4083ddf2bd30ebe63
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 2365, y: 194}
+  - name: Left Arm
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 426
+      y: 2501
+      width: 340
+      height: 622
+    spriteID: 6d051decb194ca040a976015314d2d07
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 347, y: 1806}
+  - name: Right Leg
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2249
+      y: 938
+      width: 466
+      height: 717
+    spriteID: 113411a55880e9f418d4f0a20439b7a3
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1418, y: 850}
+  - name: Left Leg
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1020
+      y: 938
+      width: 565
+      height: 755
+    spriteID: 8843c43effafb8742aa9f1ef4f416b95
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 782, y: 886}
+  - name: Head Left
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 938
+      width: 551
+      height: 1083
+    spriteID: eaa654e0633957548b9902369975531e
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -220, y: -241}
+  - name: energy/life
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2723
+      y: 938
+      width: 536
+      height: 479
+    spriteID: da5e3caad84b3f94fac3c3725972950a
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 2492, y: -245}
+  - name: Eye
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1947
+      y: 1633
+      width: 114
+      height: 250
+    spriteID: 8aee9d70bd8c86a4c9f5125cb00c22e0
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1235, y: 720}
+  - name: wire 6
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2548
+      y: 1665
+      width: 142
+      height: 203
+    spriteID: feb68c113fb599749a4502c69b764d39
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1786, y: 890}
+  - name: wire 5
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3367
+      y: 1585
+      width: 180
+      height: 57
+    spriteID: dbfa67ab9396dcf47b985bba1ad02dd6
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 2595, y: 588}
+  - name: wire 4
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3555
+      y: 1585
+      width: 180
+      height: 52
+    spriteID: 1464a0806ee1c7544ae8c521e87d7d0d
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 2796, y: 475}
+  - name: wire 3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1651
+      y: 1844
+      width: 112
+      height: 166
+    spriteID: 829e37d68cda0d94db4ba921c6b3c5cb
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1001, y: 734}
+  - name: wire 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3367
+      y: 1650
+      width: 183
+      height: 42
+    spriteID: 6160c5e6ed568ba40bc80777c20f4997
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 2790, y: 611}
+  - name: wire 1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1771
+      y: 1844
+      width: 133
+      height: 139
+    spriteID: 1033e1bb3882be04f9b7c3be0896b2fb
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1152, y: 983}
+  - name: Flower
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2249
+      y: 1665
+      width: 294
+      height: 245
+    spriteID: bc2830baac327214680c4e785dc34bbc
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1627, y: -330}
+  - name: flower backdrop
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2723
+      y: 1414
+      width: 488
+      height: 541
+    spriteID: a771c0d1ec1246e4bad973122c02a4de
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 2197, y: -415}
+  - name: vine BL
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1651
+      y: 1633
+      width: 215
+      height: 172
+    spriteID: 734e5e88cc59bf24ca673b90f0da9163
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1096, y: -306}
+  - name: Body closed
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 1252
+      height: 926
+    spriteID: f7c6a26ffdf38444cb4edffc02060d2f
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -61, y: -507}
+  - name: Body closing
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1264
+      y: 4
+      width: 1252
+      height: 926
+    spriteID: 3121a849e6dd5c944b9e1deae4cb910e
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1199, y: -507}
+  - name: Evil
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 426
+      y: 2020
+      width: 469
+      height: 473
+    spriteID: c593ca18821ac0542b39c87c02c4c099
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -344, y: 771}
+  - name: Head Right
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2020
+      width: 414
+      height: 1131
+    spriteID: 9be4b56136a6af44e954ffd647678c7e
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -824, y: 852}
+  - name: vine BR
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2249
+      y: 1913
+      width: 229
+      height: 91
+    spriteID: 1cabd569a4d48b943b9b084bf0608b6f
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1466, y: -70}
+  - name: vine TR
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2548
+      y: 1876
+      width: 124
+      height: 95
+    spriteID: 67ad963b2c5f06744842518349688717
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1726, y: -246}
+  - name: vine TL
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2069
+      y: 1633
+      width: 162
+      height: 70
+    spriteID: 90b19a5d22d8c79449def0736de107e5
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1515, y: -475}
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Android
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  mosaicLayers: 1
+  documentPivot: {x: 0, y: 0}
+  documentAlignment: 0
+  importHiddenLayers: 0
+  importedTextureWidth: 2048
+  importedTextureHeight: 2048
+  documentSize: {x: 1505, y: 2411}
+  paperDollMode: 0
+  keepDupilcateSpriteName: 0
+  spriteCategoryList:
+    categories: []
+  textureActualWidth: 4096
+  textureActualHeight: 4096
+  spritePackingTag: 
+  resliceFromLayer: 0
+  characterMode: 1
+  mosaicPSDLayers: []
+  rigPSDLayers:
+  - name: Body
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 00000000000000000000000000000000
+    layerID: 44
+    mosaicPosition: {x: 0, y: 0}
+  - name: Body closed
+    spriteName: Body closed
+    isGroup: 0
+    parentIndex: 0
+    spriteID: f7c6a26ffdf38444cb4edffc02060d2f
+    layerID: 68
+    mosaicPosition: {x: 4, y: 4}
+  - name: Body closing
+    spriteName: Body closing
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 3121a849e6dd5c944b9e1deae4cb910e
+    layerID: 67
+    mosaicPosition: {x: 1264, y: 4}
+  - name: Body
+    spriteName: Body
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 4a3f43c5ff389d54198a9e5ee7338db6
+    layerID: 16
+    mosaicPosition: {x: 2524, y: 4}
+  - name: Right Arm
+    spriteName: Right Arm
+    isGroup: 0
+    parentIndex: 0
+    spriteID: e8af2ec3c64a7ea4083ddf2bd30ebe63
+    layerID: 21
+    mosaicPosition: {x: 3367, y: 938}
+  - name: Right Leg
+    spriteName: Right Leg
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 113411a55880e9f418d4f0a20439b7a3
+    layerID: 17
+    mosaicPosition: {x: 2249, y: 938}
+  - name: Left Arm
+    spriteName: Left Arm
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 6d051decb194ca040a976015314d2d07
+    layerID: 18
+    mosaicPosition: {x: 426, y: 2501}
+  - name: Left Leg
+    spriteName: Left Leg
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 8843c43effafb8742aa9f1ef4f416b95
+    layerID: 2
+    mosaicPosition: {x: 1020, y: 938}
+  - name: InnerCore
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 00000000000000000000000000000000
+    layerID: 42
+    mosaicPosition: {x: 0, y: 0}
+  - name: Eye
+    spriteName: Eye
+    isGroup: 0
+    parentIndex: 8
+    spriteID: 8aee9d70bd8c86a4c9f5125cb00c22e0
+    layerID: 51
+    mosaicPosition: {x: 1947, y: 1633}
+  - name: wire 6
+    spriteName: wire 6
+    isGroup: 0
+    parentIndex: 8
+    spriteID: feb68c113fb599749a4502c69b764d39
+    layerID: 57
+    mosaicPosition: {x: 2548, y: 1665}
+  - name: wire 5
+    spriteName: wire 5
+    isGroup: 0
+    parentIndex: 8
+    spriteID: dbfa67ab9396dcf47b985bba1ad02dd6
+    layerID: 56
+    mosaicPosition: {x: 3367, y: 1585}
+  - name: wire 4
+    spriteName: wire 4
+    isGroup: 0
+    parentIndex: 8
+    spriteID: 1464a0806ee1c7544ae8c521e87d7d0d
+    layerID: 55
+    mosaicPosition: {x: 3555, y: 1585}
+  - name: wire 3
+    spriteName: wire 3
+    isGroup: 0
+    parentIndex: 8
+    spriteID: 829e37d68cda0d94db4ba921c6b3c5cb
+    layerID: 54
+    mosaicPosition: {x: 1651, y: 1844}
+  - name: wire 2
+    spriteName: wire 2
+    isGroup: 0
+    parentIndex: 8
+    spriteID: 6160c5e6ed568ba40bc80777c20f4997
+    layerID: 53
+    mosaicPosition: {x: 3367, y: 1650}
+  - name: wire 1
+    spriteName: wire 1
+    isGroup: 0
+    parentIndex: 8
+    spriteID: 1033e1bb3882be04f9b7c3be0896b2fb
+    layerID: 52
+    mosaicPosition: {x: 1771, y: 1844}
+  - name: Inner Core
+    spriteName: Inner Core
+    isGroup: 0
+    parentIndex: 8
+    spriteID: 27444d3be8631ab409f3ff09e4172e3b
+    layerID: 35
+    mosaicPosition: {x: 1651, y: 938}
+  - name: Head
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 00000000000000000000000000000000
+    layerID: 48
+    mosaicPosition: {x: 0, y: 0}
+  - name: Flower
+    spriteName: Flower
+    isGroup: 0
+    parentIndex: 17
+    spriteID: bc2830baac327214680c4e785dc34bbc
+    layerID: 58
+    mosaicPosition: {x: 2249, y: 1665}
+  - name: Evil
+    spriteName: Evil
+    isGroup: 0
+    parentIndex: 17
+    spriteID: c593ca18821ac0542b39c87c02c4c099
+    layerID: 70
+    mosaicPosition: {x: 426, y: 2020}
+  - name: energy/life
+    spriteName: energy/life
+    isGroup: 0
+    parentIndex: 17
+    spriteID: da5e3caad84b3f94fac3c3725972950a
+    layerID: 50
+    mosaicPosition: {x: 2723, y: 938}
+  - name: Head Right
+    spriteName: Head Right
+    isGroup: 0
+    parentIndex: 17
+    spriteID: 9be4b56136a6af44e954ffd647678c7e
+    layerID: 69
+    mosaicPosition: {x: 4, y: 2020}
+  - name: Head Left
+    spriteName: Head Left
+    isGroup: 0
+    parentIndex: 17
+    spriteID: eaa654e0633957548b9902369975531e
+    layerID: 24
+    mosaicPosition: {x: 4, y: 938}
+  - name: flower backdrop
+    spriteName: flower backdrop
+    isGroup: 0
+    parentIndex: 17
+    spriteID: a771c0d1ec1246e4bad973122c02a4de
+    layerID: 60
+    mosaicPosition: {x: 2723, y: 1414}
+  - name: vine BR
+    spriteName: vine BR
+    isGroup: 0
+    parentIndex: 17
+    spriteID: 1cabd569a4d48b943b9b084bf0608b6f
+    layerID: 71
+    mosaicPosition: {x: 2249, y: 1913}
+  - name: vine TR
+    spriteName: vine TR
+    isGroup: 0
+    parentIndex: 17
+    spriteID: 67ad963b2c5f06744842518349688717
+    layerID: 72
+    mosaicPosition: {x: 2548, y: 1876}
+  - name: vine TL
+    spriteName: vine TL
+    isGroup: 0
+    parentIndex: 17
+    spriteID: 90b19a5d22d8c79449def0736de107e5
+    layerID: 73
+    mosaicPosition: {x: 2069, y: 1633}
+  - name: vine BL
+    spriteName: vine BL
+    isGroup: 0
+    parentIndex: 17
+    spriteID: 734e5e88cc59bf24ca673b90f0da9163
+    layerID: 59
+    mosaicPosition: {x: 1651, y: 1633}
+  characterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+  generateGOHierarchy: 0
+  textureAssetName: Boss 1 - Stone Prodigious Texture
+  prefabAssetName: Boss 1 - Stone Prodigious Prefab
+  spriteLibAssetName: Boss 1 - Stone Prodigious Sprite Lib
+  secondarySpriteTextures: []
