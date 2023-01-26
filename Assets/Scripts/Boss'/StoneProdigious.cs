@@ -2,21 +2,39 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering;
-using TMPro;
+using UnityEngine.UI;
 using UnityEngine.Rendering.Universal;
 
 public class StoneProdigious : MonoBehaviour
 {
-    public int health = 200;
-    public GameObject ufinishedgame;
-    public TextMeshProUGUI bosshealthui;
+
+    // AttackNumber in animation correlates to: text
+    // 0 : null
+    // 1 : start
+    // 2 : end
+    // 3 : idle
+    // 4 : walk
+    // 5 : rock smack
+    // 6 : stun
+    // 7 : Lift Arms / Rocks falling // perhaps not appliable aka delete if works without
+    // 8 : 
+    // 9 : 
+
+    public float health = 200;
+    public Image bosshealthui;
+    private bool wasAutoSave;
+    private bool started;
+    public float DamageMultiplier = 1;
+    public GameObject Eye;
+    public bool endAnims;
+    bool stunPlayer;
 
     public GameObject Rock;
     public Transform[] RockInstantiateLocations;
     public GameObject[] bodys;
     public LayerMask Ground;
 
-    public Movement Player;
+    public PlayerManagerFV Player;
     public GameObject[] PlayerBody;
 
     public Animator MainCameraAnimator;
@@ -55,13 +73,30 @@ public class StoneProdigious : MonoBehaviour
         InitialNextArmLocations[0] = NextLeftArmLoc.transform.position;
         InitialNextArmLocations[1] = NextRightArmLoc.transform.position;*/
 
-    //private int previousMove = -1;
+    //private int previousMove = -1; print
 
     // Start Boss Fight ----------------------------------------------------------------------------------------------------------------------------------------------
 
+
+    void Update()
+    {
+
+        if(!started && Player.m_isGrounded) {
+            started = true;
+            ChangeBlackBarsState(true);
+            animator.SetInteger("AttackNum", 1);
+        }
+
+    }
+
     void Start() 
     {
-        StartBossFight();
+        if(SaveManager.instance.activeSave.autosave) {
+            SaveManager.instance.activeSave.autosave = false;
+            wasAutoSave = true;
+
+        }
+
 
         InitialNextArmLocations = new [] {
             NextRightArmLoc.transform.position,
@@ -69,17 +104,43 @@ public class StoneProdigious : MonoBehaviour
         };
     }
 
-    public void StartBossFight()
+    public void FinishStart()
     {
-        StartCoroutine(StartMovement(false));
+        animator.SetInteger("AttackNum", 3);
+        ChangeBlackBarsState(false);
+        StartCoroutine(StartBossFight());
+    }
+
+    public IEnumerator StartBossFight()
+    {
+        yield return new WaitForSeconds(3);
+        StartMovement(false);
         StartCoroutine(WaitingTimeForEyeState());
     }
 
+    public void bossDamaged(float healthReduced) {
+        health -= healthReduced;
+        if(health <= 0) {
+            bosshealthui.fillAmount = 0;
+            ChangeBlackBarsState(true);
+            endAnims = true;
+            animator.SetInteger("AttackNum", 2);
+
+        } else {
+            bosshealthui.fillAmount = health / 200;
+        }
+    }
+
+    void ChangeBlackBarsState(bool state) 
+    => GameManager.instance.changeBlackBarsState(state, 0, 0.05f);
+
     IEnumerator WaitForNextMovement()
     {
-        float RandomWaitingTime = Random.Range(2f, 5f);
-        yield return new WaitForSeconds(RandomWaitingTime);
-        NextBossMove();
+        if(!endAnims){
+            float RandomWaitingTime = Random.Range(2f, 5f);
+            yield return new WaitForSeconds(RandomWaitingTime);
+            NextBossMove();
+        }
     }
 
     void NextBossMove()
@@ -87,7 +148,8 @@ public class StoneProdigious : MonoBehaviour
         float RandomMoveF = Random.Range(0f, 5f);//0,5
         int RandomMove = (int) RandomMoveF;
 
-        print(RandomMove);
+        if(endAnims)
+            return;
 
         if(transform.position.x > 2)
         {   
@@ -101,9 +163,9 @@ public class StoneProdigious : MonoBehaviour
         {
             case 0:
             if(direction != 0) {
-            StartCoroutine(StartMovement(true)); }
+            StartMovement(true); }
             else {
-            StartCoroutine(StartMovement(false)); }
+            StartMovement(false); }
             break;
             
             case 1:
@@ -130,37 +192,36 @@ public class StoneProdigious : MonoBehaviour
 
     // Boss Movement ----------------------------------------------------------------------------------------------------------------------------------------------
     
-    IEnumerator StartMovement(bool PredeterminedNextDirection)
+    void StartMovement(bool PredeterminedNextDirection)
     {
         if(!PredeterminedNextDirection) {
             float AmountOfMovementsF = Random.Range(1f, 3f);
             AmountOfMovements = (int) AmountOfMovementsF;
 
             float directionf = Random.Range(-2f, 2f);
+
+            while ((int) directionf == 0) {
+                directionf = Random.Range(-2f, 2f);
+            }
+
             direction = (int) directionf;
             
 
-        }
-        
-        if(direction == 0) {
-            yield return new WaitForFixedUpdate();
-            StartCoroutine(StartMovement(PredeterminedNextDirection));
-            StopCoroutine(StartMovement(PredeterminedNextDirection));
         }
 
         float AmountOfStepsF = Random.Range(2f, 4f);
         AmountOfSteps = (int) AmountOfStepsF;
 
         animator.SetInteger("direction", direction);
+        animator.SetInteger("AttackNum", 4);
     }
 
     public void NextStep()
     {
-        transform.position += new Vector3( direction * 1.26f, 0f, 0f);
+        transform.position += new Vector3( direction * 0.95f, 0f, 0f);
         AmountOfSteps--;
         if(AmountOfSteps <= 0)
         {
-            animator.SetInteger("direction", 0);
             FinishedDirectionHeading();
         }
     }
@@ -168,21 +229,25 @@ public class StoneProdigious : MonoBehaviour
     void FinishedDirectionHeading()
     {
         AmountOfMovements--;
+        animator.SetInteger("direction", 0);
+        animator.SetInteger("AttackNum", 3);
         if(AmountOfMovements >= 1)
         {
             direction *= -1;
-            StartCoroutine(StartMovement(true));
+            StartMovement(true);
         } else {
             direction = 0;
             StartCoroutine(WaitForNextMovement());
         }
     } 
 
+
     // Strengthen --------------------------------------------------------------------------------------------------------------------------------------------
 
     void Strengthen()
     {
-        // increase damage
+        // increase damage done
+        DamageMultiplier = 1.5f;
         StrengthenEffect.Play(); 
     }
 
@@ -231,11 +296,11 @@ public class StoneProdigious : MonoBehaviour
     }
 
     // Attacks: ----------------------------------------------------------------------------------------------------------------------------------------------
-    // Rock Attack 
+    // Rock Attack transform
 
-    void SetArms(int TorF) => animator.SetInteger("LiftArms", TorF);
-    void CameraShake(int TorF) => MainCameraAnimator.SetInteger("Shake", TorF);
-    void LiftArmsLength(int speed) => animator.speed = speed;
+    void SetArms(int TorF) => animator.SetInteger("LiftArms", TorF); //true or false || 1 or 0
+    void CameraShake(int TorF) => MainCameraAnimator.SetInteger("Shake", TorF); // true or false || 1 or 0
+    void SetAnimatorSpeed(float speed) => animator.speed = speed;
 
     void StartRocksFalling()
     {
@@ -243,6 +308,7 @@ public class StoneProdigious : MonoBehaviour
         int AmountOfRocks = (int) AmountOfRocksF;
 
         SetArms(1);
+        animator.SetInteger("AttackNum", 7);
         CameraShake(1);
 
         StartCoroutine(RocksFalling(AmountOfRocks));
@@ -258,8 +324,9 @@ public class StoneProdigious : MonoBehaviour
             StartCoroutine(RocksFalling(AmountOfRocks));
         } else {
             Debug.Log("Rocks stopped falling");
-            LiftArmsLength(1);
+            SetAnimatorSpeed(1);
             CameraShake(0);
+            animator.SetInteger("AttackNum", 3);
             StartCoroutine(WaitForNextMovement());
         }
     }
@@ -271,31 +338,43 @@ public class StoneProdigious : MonoBehaviour
         Quaternion RockRotation = Quaternion.Euler(0f, 0f, 0f);
 
         GameObject NewRock = Instantiate(Rock, RockLocation, RockRotation);    
+        NewRock.transform.GetChild(0).GetComponent<RockFalling>().Boss = this;
     }
 
     // Stone Age -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
     IEnumerator StoneAge()
     {
-        Player.CanMove = false;
+        yield return new WaitForFixedUpdate();
+        Player.HorizontalMovement = 0;
+        Player.VerticalMovement = 0;
 
         Color32 previousPlayerColor = PlayerBody[0].gameObject.GetComponent<SpriteRenderer>().color;
 
         foreach(GameObject b in PlayerBody) {
             b.gameObject.GetComponent<SpriteRenderer>().color = new Color32(25, 25, 25, 200);
         }
-        animator.SetBool("stunning", true);
+        animator.SetInteger("AttackNum", 6);
 
+        stunPlayer = true;
         yield return new WaitForSeconds(5f);
+        stunPlayer = false;
 
-        Player.CanMove = true;
         
         foreach(GameObject b in PlayerBody) {
             b.gameObject.GetComponent<SpriteRenderer>().color = previousPlayerColor;
         }
 
-        animator.SetBool("stunning", false);
+        animator.SetInteger("AttackNum", 3);
         StartCoroutine(WaitForNextMovement());
+    }
+
+    void LateUpdate() {
+        if(stunPlayer) {
+            Player.HorizontalMovement = 0;
+            Player.VerticalMovement = 0;
+        }
+
     }
 
     // rock wacc -----------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -312,6 +391,9 @@ public class StoneProdigious : MonoBehaviour
         StartCoroutine(ArmToLocation(RightArm, InitialNextArmLocations[0], 0f, 0, false));
         StartCoroutine(ArmToLocation(LeftArm, InitialNextArmLocations[1], 0f, 1, false));
     }
+    
+    //finish animation is whether the arms is going back to initial locations
+    //IArmL is InitialNextArmLocations
 
     IEnumerator ArmToLocation(GameObject arm, Vector3 nextArm, float time, int IArmL, bool FinishAnimation)
     {
@@ -330,7 +412,6 @@ public class StoneProdigious : MonoBehaviour
 
         yield return new WaitForFixedUpdate();
         time++;
-        print(time);
 
         if(time / 100 > 1f && nextArm == InitialNextArmLocations[0] && !FinishAnimation)
         {
@@ -355,7 +436,6 @@ public class StoneProdigious : MonoBehaviour
 
         yield return new WaitForFixedUpdate();
         time++;
-        print(time);
 
         if(time / 60 > 1) {
             StartCoroutine(ArmToLocation(arm, NextLocation.transform.position, 0, IArmL, true));
@@ -382,14 +462,14 @@ public class StoneProdigious : MonoBehaviour
 
     void StartRockSmacc()
     {
-        animator.SetBool("rocksmaccing", true);
+        animator.SetInteger("AttackNum", 5);
     }
 
     public IEnumerator RockSmacced()
     {
         if(Player.m_isGrounded)
         {
-            Player.rb.AddForce(new Vector2(0f, 100f));
+            Player.rb.AddForce(new Vector2(0f, 500f));
             // decrease health
         }
 
@@ -402,9 +482,7 @@ public class StoneProdigious : MonoBehaviour
         StartCoroutine(Glitch(0f, 1));
         StartCoroutine(lensdistortion(0f, -1));
 
-        CameraShake(1);
         yield return new WaitForSeconds(0.25f);
-        CameraShake(0);
         
         yield return new WaitForSeconds(15f);
         Destroy(particlez[0]);
@@ -414,7 +492,7 @@ public class StoneProdigious : MonoBehaviour
 
     void EndRockSmacc()
     {
-        animator.SetBool("rocksmaccing", false);
+        animator.SetInteger("AttackNum", 3);
         StartCoroutine(WaitForNextMovement());
     }
 
@@ -461,14 +539,14 @@ public class StoneProdigious : MonoBehaviour
     }
 
     //endgame -------------------------------------------------------------------------------------------------------------------------------
-    public void EndGame()
-    {
-        ufinishedgame.SetActive(true);
-        Destroy(this.gameObject);
-    }
 
-    void Update()
-    {
-        bosshealthui.text = health.ToString();
+    void FinishBossFight() {
+        Eye.transform.parent = null;
+        Destroy(this.gameObject);
+        if(wasAutoSave) 
+            SaveManager.instance.activeSave.autosave = true;
+        
     }
+    
+
 }

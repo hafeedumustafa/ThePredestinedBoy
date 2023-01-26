@@ -5,6 +5,8 @@ using UnityEngine;
 public class fogSpawner : MonoBehaviour
 {
     [SerializeField]List<GameObject> Clouds = new List<GameObject>();
+    public bool isFog;//if its a cloud or fog
+    private Color32 colour;
     public GameObject[] CloudPrefabs;
     public GameObject[] PossibleStartCloudsPos;
     public Transform StartCloudPos;
@@ -13,6 +15,21 @@ public class fogSpawner : MonoBehaviour
 
     void Start()
     {
+        switch(SaveManager.instance.activeSave.XTREME, isFog)
+        {
+            case (true, false):
+                colour = new Color32(69, 0, 110, 255);
+                break;
+            case (false, false):
+                colour = new Color32(255, 255, 255, 255);
+                break;
+            default:
+                colour = new Color32(239, 159, 141, 61);
+                break;
+        }
+
+
+        
         foreach(GameObject p in PossibleStartCloudsPos)
         {
             GameObject cloud = 
@@ -20,8 +37,10 @@ public class fogSpawner : MonoBehaviour
                 (int) Random.Range(0, CloudPrefabs.Length)]
                 , p.transform.position + new Vector3(0, Random.Range(-1.2f, 1.2f), 0), p.transform.rotation);
 
+            cloud.GetComponent<SpriteRenderer>().color = colour;
             Clouds.Add(cloud);
         }
+        
     }
 
     void Update()
@@ -44,7 +63,7 @@ public class fogSpawner : MonoBehaviour
                 (int) Random.Range(0, CloudPrefabs.Length)],
                 StartCloudPos.transform.position + new Vector3 (0, Random.Range(-1.2f, 1.2f), 0), 
                 StartCloudPos.transform.rotation);
-
+            cloud.GetComponent<SpriteRenderer>().color = colour;
             Clouds.Insert(0, cloud);
         } 
         
@@ -55,6 +74,7 @@ public class fogSpawner : MonoBehaviour
                 (int) Random.Range(0, CloudPrefabs.Length)],
                 EndCloudPos.transform.position + new Vector3 (0, Random.Range(-1.2f, 1.2f), 0), 
                 EndCloudPos.transform.rotation);
+            cloud.GetComponent<SpriteRenderer>().color = colour;
 
             Clouds.Insert(Clouds.Count, cloud);
         }

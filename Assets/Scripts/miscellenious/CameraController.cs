@@ -37,7 +37,11 @@ public class CameraController : MonoBehaviour
 
         else if(ZoomStatus == "zooming out") {//1.75, 5.0
             maincamera.m_Lens.OrthographicSize = Mathf.Lerp(LerpValueII, LerpValueI, time);
-            maincamera.transform.position = new Vector3( Mathf.Lerp(player.position.x, SavedCameraPosition.position.x, time), Mathf.Lerp(player.position.y, SavedCameraPosition.position.y, time), transform.position.z );
+            maincamera.transform.position = 
+            new Vector3( 
+                Mathf.Lerp(player.position.x, SavedCameraPosition.position.x, time), 
+                Mathf.Lerp(player.position.y, SavedCameraPosition.position.y, time), 
+                transform.position.z );
             
             time += speed;
 
@@ -51,5 +55,26 @@ public class CameraController : MonoBehaviour
 
     public void SaveCameraPosition() {
         SavedCameraPosition.position = transform.position;
+    }
+
+    public void TransitionCamera(Vector3 newPosition) {
+        StartCoroutine(TransitioningCamera(newPosition, maincamera.transform.position, 0));
+    }
+
+    IEnumerator TransitioningCamera(Vector3 newPosition, Vector3 oldPosition, float time)
+    {
+        time += 0.02f;
+        maincamera.transform.position = 
+        new Vector3(
+            Mathf.Lerp(oldPosition.x, newPosition.x, time), 
+            Mathf.Lerp(oldPosition.y, newPosition.y, time), 
+            transform.position.z);
+
+        if(time < 1) {
+            yield return new WaitForFixedUpdate();
+            StartCoroutine(TransitioningCamera(newPosition, oldPosition, time));
+        } else {
+            player.gameObject.GetComponent<PlayerManagerTD>().CanMove = true;
+        }
     }
 }

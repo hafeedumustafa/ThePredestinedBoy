@@ -14,6 +14,9 @@ TagManager:
   - Canvas
   - Props
   - OneWayGround
+  - SwingingVine
+  - VineBone
+  - Boss
   layers:
   - Default
   - TransparentFX

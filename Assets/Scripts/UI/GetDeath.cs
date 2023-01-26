@@ -6,8 +6,7 @@ public class GetDeath : MonoBehaviour
 {
     // Start is called before the first frame update
     void Awake() {
-        
-        GameManager.instance.deathScreen = this.gameObject;
+        try{GameManager.instance.deathScreen = this.gameObject;} catch{}
         gameObject.SetActive(false);
     }
 }

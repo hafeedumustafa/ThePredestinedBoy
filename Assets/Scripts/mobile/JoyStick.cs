@@ -40,7 +40,7 @@ public class JoyStick : MonoBehaviour
         if(MousePos.x < JoystickArea) {
         Stick.position = joystickPos + new Vector3(NewStickPos.x, NewStickPos.y, 0f);
 
-        if (Player.TryGetComponent(out Movement movement)) {
+        if (Player.TryGetComponent(out PlayerManagerFV movement)) {
                 if(NewStickPos != ClampMagnitude(5f)) {
                     if(NewStickPos.x > 0) {
                         movement.HorizontalMovement = 1;
@@ -65,7 +65,7 @@ public class JoyStick : MonoBehaviour
 
         Vector3 TopdownMove = Vector3.ClampMagnitude(NewStickPos, 1);
 
-        if (Player.TryGetComponent(out TDmovement tdmovement)) {
+        if (Player.TryGetComponent(out PlayerManagerTD tdmovement)) {
                 
             tdmovement.HorizontalMovement = TopdownMove.x;
             tdmovement.VerticalMovement = TopdownMove.y;
@@ -99,7 +99,7 @@ public class JoyStick : MonoBehaviour
         Stick.position = joystickPos;
         NewStickPos = new Vector3(0f, 0f, 0f);
 
-        if (Player.TryGetComponent(out Movement movement)) {
+        if (Player.TryGetComponent(out PlayerManagerFV movement)) {
 
             movement.speed = movement.initialspeed;
             speedIncreased = false;
@@ -107,7 +107,7 @@ public class JoyStick : MonoBehaviour
             movement.HorizontalMovement = 0;
             movement.VerticalMovement = 0;
         }
-        if (Player.TryGetComponent(out TDmovement tdmovement)) {
+        if (Player.TryGetComponent(out PlayerManagerTD tdmovement)) {
             tdmovement.m_speed = tdmovement.m_InitialSpeed;
             speedIncreased = false;
 

@@ -9,7 +9,7 @@ public class switchScenes : MonoBehaviour
     public VectorValue storedPlayerPosition;
 
     void OnTriggerEnter2D(Collider2D collider) {
-        if(collider.tag == "Player") {
+        if(collider.CompareTag("Player")) {
             SaveManager.instance.switchedScene = true;
             storedPlayerPosition.startValue = PlayerPosition;
             SceneManager.LoadScene(nextScene);

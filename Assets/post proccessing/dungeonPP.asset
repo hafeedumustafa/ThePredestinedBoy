@@ -25,7 +25,7 @@ MonoBehaviour:
     m_Value: {x: 0.5, y: 0.5}
   intensity:
     m_OverrideState: 1
-    m_Value: 0.22
+    m_Value: 0.246
     min: 0
     max: 1
   smoothness:
@@ -36,29 +36,6 @@ MonoBehaviour:
   rounded:
     m_OverrideState: 1
     m_Value: 0
---- !u!114 &-8195037548839806166
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5485954d14dfb9a4c8ead8edb0ded5b1, type: 3}
-  m_Name: LiftGammaGain
-  m_EditorClassIdentifier: 
-  active: 1
-  m_AdvancedMode: 0
-  lift:
-    m_OverrideState: 1
-    m_Value: {x: 1, y: 1, z: 1, w: 0}
-  gamma:
-    m_OverrideState: 1
-    m_Value: {x: 1, y: 1, z: 1, w: 0}
-  gain:
-    m_OverrideState: 1
-    m_Value: {x: 0.17113686, y: 0.2772513, z: 1, w: 0}
 --- !u!114 &-1820976477567466953
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -99,6 +76,11 @@ MonoBehaviour:
   highQualityFiltering:
     m_OverrideState: 1
     m_Value: 0
+  skipIterations:
+    m_OverrideState: 0
+    m_Value: 1
+    min: 0
+    max: 16
   dirtTexture:
     m_OverrideState: 1
     m_Value: {fileID: 0}
@@ -120,5 +102,44 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   components:
   - {fileID: -8786010741456066012}
-  - {fileID: -8195037548839806166}
   - {fileID: -1820976477567466953}
+  - {fileID: 3458350521888012817}
+--- !u!114 &3458350521888012817
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 558a8e2b6826cf840aae193990ba9f2e, type: 3}
+  m_Name: ShadowsMidtonesHighlights
+  m_EditorClassIdentifier: 
+  active: 1
+  m_AdvancedMode: 0
+  shadows:
+    m_OverrideState: 1
+    m_Value: {x: 0.557721, y: 0.7127964, z: 1, w: 0}
+  midtones:
+    m_OverrideState: 1
+    m_Value: {x: 0.90234154, y: 1, z: 0.6199328, w: 0}
+  highlights:
+    m_OverrideState: 1
+    m_Value: {x: 1, y: 1, z: 1, w: 0}
+  shadowsStart:
+    m_OverrideState: 1
+    m_Value: 0
+    min: 0
+  shadowsEnd:
+    m_OverrideState: 1
+    m_Value: 0.3
+    min: 0
+  highlightsStart:
+    m_OverrideState: 1
+    m_Value: 0.55
+    min: 0
+  highlightsEnd:
+    m_OverrideState: 1
+    m_Value: 1
+    min: 0

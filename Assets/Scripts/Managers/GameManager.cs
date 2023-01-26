@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro;
 using UnityEngine.IO;
@@ -20,6 +21,7 @@ public class GameManager : MonoBehaviour
     public VectorValue vectorValue;
     public bool PlayerCanInteract = true;
     public bool touchInput = false;
+    public GameObject blackbars;
     
     //start
     void Awake() {
@@ -46,10 +48,10 @@ public class GameManager : MonoBehaviour
     public void InteractingPlayer(bool OnOrOff)
     {
         PlayerCanInteract = OnOrOff;
-        if(Player.TryGetComponent(out Movement movement)) {
+        if(Player.TryGetComponent(out PlayerManagerFV movement)) {
             movement.CanMove = OnOrOff;
         } 
-        else if(Player.TryGetComponent(out TDmovement tdmovement)) {
+        else if(Player.TryGetComponent(out PlayerManagerTD tdmovement)) {
             tdmovement.CanMove = OnOrOff;
         }
     }
@@ -72,7 +74,7 @@ public class GameManager : MonoBehaviour
 
     //death
     public void Death() {
-        Player.GetComponent<Movement>().rb.gravityScale = 0f;
+        Player.GetComponent<PlayerManagerFV>().rb.gravityScale = 0f;
         SaveManager.instance.activeSave.Souls = 0;
         deathScreen.SetActive(true);
         StartCoroutine(DeathScreenActivation(0.02f, 1));
@@ -97,6 +99,31 @@ public class GameManager : MonoBehaviour
     public void SetAOK(int Key) {
         SaveManager.instance.activeSave.keys += Key;
         KeysText.GetComponent<TextMeshProUGUI>().text = SaveManager.instance.activeSave.keys.ToString();
+    }
+
+    //black bars
+    
+    public void changeBlackBarsState(bool enable, float time, float increaseTime)
+    {
+        print(".");
+        StartCoroutine(ChangeBlackBarsState(enable, time, increaseTime));
+    }
+
+    IEnumerator ChangeBlackBarsState(bool enable, float time, float increaseTime) {
+        time += increaseTime;
+        if(enable) {
+            blackbars.SetActive(true);
+            blackbars.GetComponent<CanvasGroup>().alpha = Mathf.Lerp(0, 1, time);
+        } else {
+            blackbars.GetComponent<CanvasGroup>().alpha = Mathf.Lerp(1, 0, time);
+        }
+
+        if(time >= 1) {if(!enable) {enable = false;}}
+        else { 
+            yield return new WaitForSeconds(0.05f);
+            StartCoroutine(ChangeBlackBarsState(enable, time, increaseTime));
+        }
+
     }
 
 }

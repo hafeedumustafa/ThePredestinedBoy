@@ -20,6 +20,7 @@ public class Interact : MonoBehaviour
 
     }
 
+    private CanvasGroup CanvasAlpha;
 
     public TypeOfInteract typeOfInteract;
 
@@ -29,11 +30,18 @@ public class Interact : MonoBehaviour
         {
             Debug.LogError("error CS1069: No Interact Object Set");
         }
+
     }
 
-    public void OnTriggerEnter2D(Collider2D collider)
+    public IEnumerator OnTriggerEnter2D(Collider2D collider)
     {
-        if (collider.tag == "Player" && GameManager.instance.PlayerCanInteract == true) {
+        CanvasAlpha = Canvas.GetComponent<CanvasGroup>();
+
+        if(CanvasAlpha.alpha != 0 && CanvasAlpha.alpha != 1) {
+            yield return new WaitForSeconds(0.13f);// 1 / 0.075 * 0.01
+        }
+
+        if (collider.CompareTag("Player") && GameManager.instance.PlayerCanInteract == true) {
             Canvas.SetActive(true);
             EnterCollisionBox = true;
             StartCoroutine(Alpha(0.075f, 1f));
@@ -44,9 +52,9 @@ public class Interact : MonoBehaviour
 
     IEnumerator Alpha(float AlphaIncrease, float FinalNumber)
     {
-        yield return new WaitForSeconds(0.01f);
-        Canvas.GetComponent<CanvasGroup>().alpha += AlphaIncrease;
-        if (Canvas.GetComponent<CanvasGroup>().alpha != FinalNumber) {
+        yield return new WaitForSeconds(0.01f);// <-------------------------- change to bigger // maybe not
+        CanvasAlpha.alpha += AlphaIncrease;
+        if (CanvasAlpha.alpha != FinalNumber) {
             StartCoroutine(Alpha(AlphaIncrease, FinalNumber));
         }
         else if(AlphaIncrease < 0) {
@@ -87,9 +95,13 @@ public class Interact : MonoBehaviour
 
     }
 
-    public void OnTriggerExit2D(Collider2D collider)
+    public IEnumerator OnTriggerExit2D(Collider2D collider)
     {
-        if (collider.tag == "Player" && GameManager.instance.PlayerCanInteract == true) {
+        CanvasAlpha = Canvas.GetComponent<CanvasGroup>();
+        if(CanvasAlpha.alpha != 0 && CanvasAlpha.alpha != 1) {
+            yield return new WaitForSeconds(0.15f);// 1 / 0.075 * 0.01
+        }
+        if (collider.CompareTag("Player") && GameManager.instance.PlayerCanInteract == true) {
             StartCoroutine(Alpha(-0.075f, 0f));
             EnterCollisionBox = false;
         }

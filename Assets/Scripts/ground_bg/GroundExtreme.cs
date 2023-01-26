@@ -29,10 +29,10 @@ public class GroundExtreme : MonoBehaviour// THIS IS FOR REGULAR GROUND
                 case true when g.layer == 8 && !ssr:
                     g.GetComponent<SpriteRenderer>().color = grass_color;
                     break;
-                case true when g.tag == "Props" && !ssr:
+                case true when g.CompareTag("Props") && !ssr:
                     g.GetComponent<SpriteRenderer>().color = new Color32(50, 7, 7, 255);
                     break;
-                case true when g.tag == "Props" && ssr:
+                case true when g.CompareTag("Props") && ssr:
                     float H,S,V;
                     Color.RGBToHSV(ssr.color, out H, out S, out V);
                     g.GetComponent<SpriteShapeRenderer>().color = Color.HSVToRGB(0, S, V, true);
@@ -55,7 +55,7 @@ public class GroundExtreme : MonoBehaviour// THIS IS FOR REGULAR GROUND
 
         for (int i = 0; i < allObjects.Length; i++)
         {
-            if (allObjects[i].layer == wantedlayer || allObjects[i].tag == wantedTag ) {
+            if (allObjects[i].layer == wantedlayer || allObjects[i].CompareTag(wantedTag) ) {
                 Grounds.Add(allObjects[i]);
             }
         }

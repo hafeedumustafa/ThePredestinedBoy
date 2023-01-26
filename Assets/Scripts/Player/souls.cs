@@ -15,8 +15,9 @@ public class souls : MonoBehaviour
     public GameObject EmptySoul;
     
     void Awake() { // settting keys text from game manager
+        try {
         GameManager.instance.KeysText = GetComponent<RectTransform>().Find("Keys").Find("NumberOfKeys").gameObject;
-        GameManager.instance.Souls = this.gameObject;
+        GameManager.instance.Souls = this.gameObject;} catch{}
     }
 
     void Start()
@@ -36,11 +37,11 @@ public class souls : MonoBehaviour
         {
             if(SaveManager.instance.activeSave.Souls - i == 0.5f) {
                 GameObject Soul = Instantiate(HalfSoul, GetComponent<RectTransform>());
-                Soul.GetComponent<RectTransform>().localPosition += new Vector3(i * 50, 0, 0);
+                Soul.GetComponent<RectTransform>().localPosition += new Vector3(i * 40, 0, 0);
                 soulObject.Add(Soul);
             } else {
                 GameObject Soul = Instantiate(FullSoul, GetComponent<RectTransform>());
-                Soul.GetComponent<RectTransform>().localPosition += new Vector3(i * 50, 0, 0);
+                Soul.GetComponent<RectTransform>().localPosition += new Vector3(i * 40, 0, 0);
                 soulObject.Add(Soul);
             }
         }
@@ -51,7 +52,7 @@ public class souls : MonoBehaviour
         {
 
             GameObject emptySoul = Instantiate(EmptySoul, GetComponent<RectTransform>());
-            emptySoul.GetComponent<RectTransform>().localPosition += new Vector3(i * 50, 0, 0);
+            emptySoul.GetComponent<RectTransform>().localPosition += new Vector3(i * 40, 0, 0);
             soulObject.Add(emptySoul);
 
         }

@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   WName: Boomerang
   description: Nice boomerang, you can throw it and it will return to you.
-  amountOfDamage: 5
-  numWeapon: 2
+  amountOfDamage: 4
+  numWeapon: 3
   hasWeapon: 0
   maxAmmo: N/A
   currentAmmo: N/A

@@ -131,6 +131,9 @@ public class SaveData
     public List<string> weaponsObtained = new List<string>();
     public int selectedWeapon;
 
+    public int arrows;
+    public int maxArrows;
+
     public int AutoSaveTime;
     public bool autosave;
 
@@ -153,6 +156,8 @@ public class SaveData
         selectedWeapon = 0;
         AutoSaveTime = 300;
         autosave = true;
+        arrows = 0;
+        maxArrows = 0;
 
 
         if(reset) { 

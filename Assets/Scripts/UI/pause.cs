@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class pause : MonoBehaviour
 {
     
+    public GameObject blackBars;
     public GameObject _pause;
     public GameObject _unPause;
     public GameObject _options;
@@ -29,6 +30,10 @@ public class pause : MonoBehaviour
     public GameObject[] weaponSlots;
     public Button[] wsb;
 
+    void Awake() {
+        try{
+        GameManager.instance.blackbars = blackBars;} catch{}
+    }
 
     void Start() {
         autosaveButton.isOn = SaveManager.instance.activeSave.autosave;
@@ -52,7 +57,7 @@ public class pause : MonoBehaviour
         //ChangeColor(SaveManager.instance.activeSave.color);
         
         for (int i = 0; i < SaveManager.instance.activeSave.weaponsObtained.Count; i++)
-        {
+        {//future me this needs to be a double for loop so that it selects the correct item
             wsb[i].interactable = true;
             weaponSlots[i].GetComponent<RectTransform>().GetChild(0).gameObject.SetActive(true);
         }
@@ -72,7 +77,7 @@ public class pause : MonoBehaviour
     void Update()
     {
         try {
-            grounded = GameManager.instance.Player.GetComponent<Movement>().m_isGrounded;
+            grounded = GameManager.instance.Player.GetComponent<PlayerManagerFV>().m_isGrounded;
         } catch {
             grounded = true;
         }

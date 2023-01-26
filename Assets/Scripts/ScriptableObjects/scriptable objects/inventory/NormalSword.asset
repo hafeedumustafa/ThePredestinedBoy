@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: NormalSword
   m_EditorClassIdentifier: 
   WName: Sword
-  description: You're First Sword! It's Good Enough, For Now...
+  description: A sword! use for melee attacks
   amountOfDamage: 4
   numWeapon: 1
   hasWeapon: 0

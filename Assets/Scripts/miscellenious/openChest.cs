@@ -5,7 +5,7 @@ public class openChest : MonoBehaviour
 {
 
     public Sprite chestopen;
-    public TDmovement tdmovement;
+    public PlayerManagerTD playerManagerTD;
     public inventory inventory;
     public CameraController CC;
     public GameObject CanInteract;
@@ -41,7 +41,7 @@ public class openChest : MonoBehaviour
             SaveManager.instance.activeSave.chestOpened.Sort();
 
             gameObject.GetComponent<SpriteRenderer>().sprite = chestopen;
-            tdmovement.OnChestOpen(chestNo);
+            playerManagerTD.OnChestOpen(chestNo);
 
             CC.SaveCameraPosition();
             CC.LerpValueII = 1.75f;

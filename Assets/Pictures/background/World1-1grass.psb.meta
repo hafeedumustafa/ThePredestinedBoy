@@ -336,7 +336,7 @@ ScriptedImporter:
   platformSettings:
   - name: DefaultTexturePlatform
     overridden: 0
-    maxTextureSize: 8192
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -347,7 +347,7 @@ ScriptedImporter:
     androidETC2FallbackOverride: 0
   - name: Standalone
     overridden: 0
-    maxTextureSize: 8192
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -358,7 +358,7 @@ ScriptedImporter:
     androidETC2FallbackOverride: 0
   - name: Android
     overridden: 0
-    maxTextureSize: 8192
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1

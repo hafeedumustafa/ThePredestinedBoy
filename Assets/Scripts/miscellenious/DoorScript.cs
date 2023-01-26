@@ -14,7 +14,7 @@ public class DoorScript : MonoBehaviour
 
 
     void Awake() {
-        if(gameObject.tag == "LockedDoor") { isLocked = true;}
+        if(gameObject.CompareTag("LockedDoor")) { isLocked = true;}
         if(SaveManager.instance.activeSave.keyDoorOpened.Exists(i => i == DoorID)) {
             gameObject.GetComponent<SpriteRenderer>().sprite = normalDoor;
             isLocked = false;
@@ -24,20 +24,20 @@ public class DoorScript : MonoBehaviour
     void Update()
     {
         if(pubCollider != null) {
-        if (pubCollider.tag == "Player" && Input.GetButtonDown("Interact") && isLocked == true && SaveManager.instance.activeSave.keys >= 1) {
+        if (pubCollider.CompareTag("Player") && Input.GetButtonDown("Interact") && isLocked == true && SaveManager.instance.activeSave.keys >= 1) {
             GameManager.instance.SetAOK(-1);
             gameObject.GetComponent<SpriteRenderer>().sprite = normalDoor;
 
             isLocked = false;
             SaveManager.instance.activeSave.keyDoorOpened.Add(DoorID);
         }
-        else if(pubCollider.tag == "Player" && Input.GetButtonDown("Interact") && isLocked != true && isOpen == false) {
+        else if(pubCollider.CompareTag("Player") && Input.GetButtonDown("Interact") && isLocked != true && isOpen == false) {
             gameObject.GetComponent<SpriteRenderer>().sprite = openedDoor;
             isOpen = true;
             collider.enabled = !collider.enabled;
             OnTriggerEnter2D(player.GetComponent<CapsuleCollider2D>());
         }
-        else if(pubCollider.tag == "Player" && Input.GetButtonDown("Interact") && isLocked != true && isOpen == true) {
+        else if(pubCollider.CompareTag("Player") && Input.GetButtonDown("Interact") && isLocked != true && isOpen == true) {
             gameObject.GetComponent<SpriteRenderer>().sprite = normalDoor;
             isOpen = false;
             collider.enabled = !collider.enabled;
