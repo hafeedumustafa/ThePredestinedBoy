@@ -34,6 +34,7 @@ ScriptedImporter:
     streamingMipmaps: 1
     streamingMipmapsPriority: 0
     vTOnly: 0
+    ignoreMasterTextureLimit: 0
     nPOTScale: 1
     sRGBTexture: 1
     spriteMode: 2
@@ -55,6 +56,7 @@ ScriptedImporter:
     flipbookRows: 0
     flipbookColumns: 0
     ignorePngGamma: 0
+    cookieMode: 0
     filterMode: 1
     aniso: 1
     mipBias: 0
@@ -88,7 +90,6 @@ ScriptedImporter:
       width: 0
       height: 0
     spriteID: 
-    internalID: 0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -98,404 +99,9 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: 0, y: 0}
+    spritePosition: {x: 0, y: 0}
   mosaicSpriteImportData: []
   rigSpriteImportData:
-  - name: Body
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 2524
-      y: 4
-      width: 1261
-      height: 907
-    spriteID: 4a3f43c5ff389d54198a9e5ee7338db6
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 2459, y: -507}
-  - name: Inner Core
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 1656
-      y: 933
-      width: 576
-      height: 695
-    spriteID: 27444d3be8631ab409f3ff09e4172e3b
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 1180, y: 271}
-  - name: Right Arm
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 3367
-      y: 938
-      width: 463
-      height: 639
-    spriteID: e8af2ec3c64a7ea4083ddf2bd30ebe63
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 2365, y: 194}
-  - name: Left Arm
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 426
-      y: 2501
-      width: 340
-      height: 622
-    spriteID: 6d051decb194ca040a976015314d2d07
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 347, y: 1806}
-  - name: Right Leg
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 2249
-      y: 938
-      width: 466
-      height: 717
-    spriteID: 113411a55880e9f418d4f0a20439b7a3
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 1418, y: 850}
-  - name: Left Leg
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 1020
-      y: 938
-      width: 565
-      height: 755
-    spriteID: 8843c43effafb8742aa9f1ef4f416b95
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 782, y: 886}
-  - name: Head Left
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 938
-      width: 551
-      height: 1083
-    spriteID: eaa654e0633957548b9902369975531e
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: -220, y: -241}
-  - name: energy/life
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 2723
-      y: 938
-      width: 536
-      height: 479
-    spriteID: da5e3caad84b3f94fac3c3725972950a
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 2492, y: -245}
-  - name: Eye
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 1947
-      y: 1633
-      width: 114
-      height: 250
-    spriteID: 8aee9d70bd8c86a4c9f5125cb00c22e0
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 1235, y: 720}
-  - name: wire 6
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 2548
-      y: 1665
-      width: 142
-      height: 203
-    spriteID: feb68c113fb599749a4502c69b764d39
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 1786, y: 890}
-  - name: wire 5
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 3367
-      y: 1585
-      width: 180
-      height: 57
-    spriteID: dbfa67ab9396dcf47b985bba1ad02dd6
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 2595, y: 588}
-  - name: wire 4
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 3555
-      y: 1585
-      width: 180
-      height: 52
-    spriteID: 1464a0806ee1c7544ae8c521e87d7d0d
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 2796, y: 475}
-  - name: wire 3
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 1651
-      y: 1844
-      width: 112
-      height: 166
-    spriteID: 829e37d68cda0d94db4ba921c6b3c5cb
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 1001, y: 734}
-  - name: wire 2
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 3367
-      y: 1650
-      width: 183
-      height: 42
-    spriteID: 6160c5e6ed568ba40bc80777c20f4997
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 2790, y: 611}
-  - name: wire 1
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 1771
-      y: 1844
-      width: 133
-      height: 139
-    spriteID: 1033e1bb3882be04f9b7c3be0896b2fb
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 1152, y: 983}
-  - name: Flower
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 2249
-      y: 1665
-      width: 294
-      height: 245
-    spriteID: bc2830baac327214680c4e785dc34bbc
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 1627, y: -330}
-  - name: flower backdrop
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 2723
-      y: 1414
-      width: 488
-      height: 541
-    spriteID: a771c0d1ec1246e4bad973122c02a4de
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 2197, y: -415}
-  - name: vine BL
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 1651
-      y: 1633
-      width: 215
-      height: 172
-    spriteID: 734e5e88cc59bf24ca673b90f0da9163
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 1096, y: -306}
   - name: Body closed
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -508,7 +114,6 @@ ScriptedImporter:
       width: 1252
       height: 926
     spriteID: f7c6a26ffdf38444cb4edffc02060d2f
-    internalID: 0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -517,7 +122,8 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -61, y: -507}
+    uvTransform: {x: 4, y: 4}
+    spritePosition: {x: 65, y: 511}
   - name: Body closing
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -530,7 +136,6 @@ ScriptedImporter:
       width: 1252
       height: 926
     spriteID: 3121a849e6dd5c944b9e1deae4cb910e
-    internalID: 0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -539,7 +144,316 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 1199, y: -507}
+    uvTransform: {x: 1264, y: 4}
+    spritePosition: {x: 65, y: 511}
+  - name: Body
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2524
+      y: 4
+      width: 1261
+      height: 907
+    spriteID: 4a3f43c5ff389d54198a9e5ee7338db6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 2524, y: 4}
+    spritePosition: {x: 65, y: 511}
+  - name: Right Arm
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3367
+      y: 938
+      width: 463
+      height: 639
+    spriteID: e8af2ec3c64a7ea4083ddf2bd30ebe63
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 3367, y: 938}
+    spritePosition: {x: 1002, y: 744}
+  - name: Right Leg
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2249
+      y: 938
+      width: 466
+      height: 717
+    spriteID: 113411a55880e9f418d4f0a20439b7a3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 2249, y: 938}
+    spritePosition: {x: 831, y: 88}
+  - name: Left Arm
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 426
+      y: 2501
+      width: 340
+      height: 622
+    spriteID: 6d051decb194ca040a976015314d2d07
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 426, y: 2501}
+    spritePosition: {x: 79, y: 695}
+  - name: Left Leg
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1020
+      y: 938
+      width: 565
+      height: 755
+    spriteID: 8843c43effafb8742aa9f1ef4f416b95
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1020, y: 938}
+    spritePosition: {x: 238, y: 52}
+  - name: Eye
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1947
+      y: 1633
+      width: 114
+      height: 250
+    spriteID: 8aee9d70bd8c86a4c9f5125cb00c22e0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1947, y: 1633}
+    spritePosition: {x: 712, y: 913}
+  - name: wire 6
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2548
+      y: 1665
+      width: 142
+      height: 203
+    spriteID: feb68c113fb599749a4502c69b764d39
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 2548, y: 1665}
+    spritePosition: {x: 762, y: 775}
+  - name: wire 5
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3367
+      y: 1585
+      width: 180
+      height: 57
+    spriteID: dbfa67ab9396dcf47b985bba1ad02dd6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 3367, y: 1585}
+    spritePosition: {x: 772, y: 997}
+  - name: wire 4
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3555
+      y: 1585
+      width: 180
+      height: 52
+    spriteID: 1464a0806ee1c7544ae8c521e87d7d0d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 3555, y: 1585}
+    spritePosition: {x: 759, y: 1110}
+  - name: wire 3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1651
+      y: 1844
+      width: 112
+      height: 166
+    spriteID: 829e37d68cda0d94db4ba921c6b3c5cb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1651, y: 1844}
+    spritePosition: {x: 650, y: 1110}
+  - name: wire 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3367
+      y: 1650
+      width: 183
+      height: 42
+    spriteID: 6160c5e6ed568ba40bc80777c20f4997
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 3367, y: 1650}
+    spritePosition: {x: 577, y: 1039}
+  - name: wire 1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1771
+      y: 1844
+      width: 133
+      height: 139
+    spriteID: 1033e1bb3882be04f9b7c3be0896b2fb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1771, y: 1844}
+    spritePosition: {x: 619, y: 861}
+  - name: Inner Core
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1656
+      y: 933
+      width: 576
+      height: 695
+    spriteID: 27444d3be8631ab409f3ff09e4172e3b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1651, y: 938}
+    spritePosition: {x: 471, y: 667}
+  - name: Flower
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2249
+      y: 1665
+      width: 294
+      height: 245
+    spriteID: bc2830baac327214680c4e785dc34bbc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 2249, y: 1665}
+    spritePosition: {x: 622, y: 1995}
   - name: Evil
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -552,7 +466,6 @@ ScriptedImporter:
       width: 469
       height: 473
     spriteID: c593ca18821ac0542b39c87c02c4c099
-    internalID: 0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -561,7 +474,30 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -344, y: 771}
+    uvTransform: {x: 426, y: 2020}
+    spritePosition: {x: 770, y: 1249}
+  - name: energy/life
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2723
+      y: 938
+      width: 536
+      height: 479
+    spriteID: da5e3caad84b3f94fac3c3725972950a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 2723, y: 938}
+    spritePosition: {x: 231, y: 1183}
   - name: Head Right
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -574,7 +510,6 @@ ScriptedImporter:
       width: 414
       height: 1131
     spriteID: 9be4b56136a6af44e954ffd647678c7e
-    internalID: 0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -583,7 +518,52 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -824, y: 852}
+    uvTransform: {x: 4, y: 2020}
+    spritePosition: {x: 828, y: 1168}
+  - name: Head Left
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 938
+      width: 551
+      height: 1083
+    spriteID: eaa654e0633957548b9902369975531e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 938}
+    spritePosition: {x: 224, y: 1179}
+  - name: flower backdrop
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2723
+      y: 1414
+      width: 488
+      height: 541
+    spriteID: a771c0d1ec1246e4bad973122c02a4de
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 2723, y: 1414}
+    spritePosition: {x: 526, y: 1829}
   - name: vine BR
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -596,7 +576,6 @@ ScriptedImporter:
       width: 229
       height: 91
     spriteID: 1cabd569a4d48b943b9b084bf0608b6f
-    internalID: 0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -605,7 +584,8 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 1466, y: -70}
+    uvTransform: {x: 2249, y: 1913}
+    spritePosition: {x: 783, y: 1983}
   - name: vine TR
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -618,7 +598,6 @@ ScriptedImporter:
       width: 124
       height: 95
     spriteID: 67ad963b2c5f06744842518349688717
-    internalID: 0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -627,7 +606,8 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 1726, y: -246}
+    uvTransform: {x: 2548, y: 1876}
+    spritePosition: {x: 822, y: 2122}
   - name: vine TL
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -640,7 +620,6 @@ ScriptedImporter:
       width: 162
       height: 70
     spriteID: 90b19a5d22d8c79449def0736de107e5
-    internalID: 0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -649,7 +628,43 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 1515, y: -475}
+    uvTransform: {x: 2069, y: 1633}
+    spritePosition: {x: 554, y: 2108}
+  - name: vine BL
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1651
+      y: 1633
+      width: 215
+      height: 172
+    spriteID: 734e5e88cc59bf24ca673b90f0da9163
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1651, y: 1633}
+    spritePosition: {x: 555, y: 1939}
+  characterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+    boneReadOnly: 0
+  sharedRigSpriteImportData: []
+  sharedRigCharacterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+    boneReadOnly: 0
   platformSettings:
   - name: DefaultTexturePlatform
     overridden: 0
@@ -685,30 +700,31 @@ ScriptedImporter:
     allowsAlphaSplitting: 0
     androidETC2FallbackOverride: 0
   mosaicLayers: 1
+  characterMode: 1
   documentPivot: {x: 0, y: 0}
   documentAlignment: 0
   importHiddenLayers: 0
-  importedTextureWidth: 2048
-  importedTextureHeight: 2048
-  documentSize: {x: 1505, y: 2411}
+  layerMappingOption: 2
+  generatePhysicsShape: 0
   paperDollMode: 0
   keepDupilcateSpriteName: 0
+  skeletonAssetReferenceID: 
   spriteCategoryList:
     categories: []
-  textureActualWidth: 4096
-  textureActualHeight: 4096
   spritePackingTag: 
   resliceFromLayer: 0
-  characterMode: 1
   mosaicPSDLayers: []
   rigPSDLayers:
   - name: Body
     spriteName: 
     isGroup: 1
     parentIndex: -1
-    spriteID: 00000000000000000000000000000000
+    spriteID: 017b0abcd636c1b42a7492a2c59f6b47
     layerID: 44
     mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
   - name: Body closed
     spriteName: Body closed
     isGroup: 0
@@ -716,6 +732,9 @@ ScriptedImporter:
     spriteID: f7c6a26ffdf38444cb4edffc02060d2f
     layerID: 68
     mosaicPosition: {x: 4, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
   - name: Body closing
     spriteName: Body closing
     isGroup: 0
@@ -723,6 +742,9 @@ ScriptedImporter:
     spriteID: 3121a849e6dd5c944b9e1deae4cb910e
     layerID: 67
     mosaicPosition: {x: 1264, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
   - name: Body
     spriteName: Body
     isGroup: 0
@@ -730,6 +752,9 @@ ScriptedImporter:
     spriteID: 4a3f43c5ff389d54198a9e5ee7338db6
     layerID: 16
     mosaicPosition: {x: 2524, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
   - name: Right Arm
     spriteName: Right Arm
     isGroup: 0
@@ -737,6 +762,9 @@ ScriptedImporter:
     spriteID: e8af2ec3c64a7ea4083ddf2bd30ebe63
     layerID: 21
     mosaicPosition: {x: 3367, y: 938}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
   - name: Right Leg
     spriteName: Right Leg
     isGroup: 0
@@ -744,6 +772,9 @@ ScriptedImporter:
     spriteID: 113411a55880e9f418d4f0a20439b7a3
     layerID: 17
     mosaicPosition: {x: 2249, y: 938}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
   - name: Left Arm
     spriteName: Left Arm
     isGroup: 0
@@ -751,6 +782,9 @@ ScriptedImporter:
     spriteID: 6d051decb194ca040a976015314d2d07
     layerID: 18
     mosaicPosition: {x: 426, y: 2501}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
   - name: Left Leg
     spriteName: Left Leg
     isGroup: 0
@@ -758,13 +792,19 @@ ScriptedImporter:
     spriteID: 8843c43effafb8742aa9f1ef4f416b95
     layerID: 2
     mosaicPosition: {x: 1020, y: 938}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
   - name: InnerCore
     spriteName: 
     isGroup: 1
     parentIndex: -1
-    spriteID: 00000000000000000000000000000000
+    spriteID: 81e896c5270399f4bb83b97eb9ad4824
     layerID: 42
     mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
   - name: Eye
     spriteName: Eye
     isGroup: 0
@@ -772,6 +812,9 @@ ScriptedImporter:
     spriteID: 8aee9d70bd8c86a4c9f5125cb00c22e0
     layerID: 51
     mosaicPosition: {x: 1947, y: 1633}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
   - name: wire 6
     spriteName: wire 6
     isGroup: 0
@@ -779,6 +822,9 @@ ScriptedImporter:
     spriteID: feb68c113fb599749a4502c69b764d39
     layerID: 57
     mosaicPosition: {x: 2548, y: 1665}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
   - name: wire 5
     spriteName: wire 5
     isGroup: 0
@@ -786,6 +832,9 @@ ScriptedImporter:
     spriteID: dbfa67ab9396dcf47b985bba1ad02dd6
     layerID: 56
     mosaicPosition: {x: 3367, y: 1585}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
   - name: wire 4
     spriteName: wire 4
     isGroup: 0
@@ -793,6 +842,9 @@ ScriptedImporter:
     spriteID: 1464a0806ee1c7544ae8c521e87d7d0d
     layerID: 55
     mosaicPosition: {x: 3555, y: 1585}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
   - name: wire 3
     spriteName: wire 3
     isGroup: 0
@@ -800,6 +852,9 @@ ScriptedImporter:
     spriteID: 829e37d68cda0d94db4ba921c6b3c5cb
     layerID: 54
     mosaicPosition: {x: 1651, y: 1844}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
   - name: wire 2
     spriteName: wire 2
     isGroup: 0
@@ -807,6 +862,9 @@ ScriptedImporter:
     spriteID: 6160c5e6ed568ba40bc80777c20f4997
     layerID: 53
     mosaicPosition: {x: 3367, y: 1650}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
   - name: wire 1
     spriteName: wire 1
     isGroup: 0
@@ -814,6 +872,9 @@ ScriptedImporter:
     spriteID: 1033e1bb3882be04f9b7c3be0896b2fb
     layerID: 52
     mosaicPosition: {x: 1771, y: 1844}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
   - name: Inner Core
     spriteName: Inner Core
     isGroup: 0
@@ -821,13 +882,19 @@ ScriptedImporter:
     spriteID: 27444d3be8631ab409f3ff09e4172e3b
     layerID: 35
     mosaicPosition: {x: 1651, y: 938}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
   - name: Head
     spriteName: 
     isGroup: 1
     parentIndex: -1
-    spriteID: 00000000000000000000000000000000
+    spriteID: dac32d2f2b1de974db3e3b8a195886c5
     layerID: 48
     mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
   - name: Flower
     spriteName: Flower
     isGroup: 0
@@ -835,6 +902,9 @@ ScriptedImporter:
     spriteID: bc2830baac327214680c4e785dc34bbc
     layerID: 58
     mosaicPosition: {x: 2249, y: 1665}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
   - name: Evil
     spriteName: Evil
     isGroup: 0
@@ -842,6 +912,9 @@ ScriptedImporter:
     spriteID: c593ca18821ac0542b39c87c02c4c099
     layerID: 70
     mosaicPosition: {x: 426, y: 2020}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
   - name: energy/life
     spriteName: energy/life
     isGroup: 0
@@ -849,6 +922,9 @@ ScriptedImporter:
     spriteID: da5e3caad84b3f94fac3c3725972950a
     layerID: 50
     mosaicPosition: {x: 2723, y: 938}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
   - name: Head Right
     spriteName: Head Right
     isGroup: 0
@@ -856,6 +932,9 @@ ScriptedImporter:
     spriteID: 9be4b56136a6af44e954ffd647678c7e
     layerID: 69
     mosaicPosition: {x: 4, y: 2020}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
   - name: Head Left
     spriteName: Head Left
     isGroup: 0
@@ -863,6 +942,9 @@ ScriptedImporter:
     spriteID: eaa654e0633957548b9902369975531e
     layerID: 24
     mosaicPosition: {x: 4, y: 938}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
   - name: flower backdrop
     spriteName: flower backdrop
     isGroup: 0
@@ -870,6 +952,9 @@ ScriptedImporter:
     spriteID: a771c0d1ec1246e4bad973122c02a4de
     layerID: 60
     mosaicPosition: {x: 2723, y: 1414}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
   - name: vine BR
     spriteName: vine BR
     isGroup: 0
@@ -877,6 +962,9 @@ ScriptedImporter:
     spriteID: 1cabd569a4d48b943b9b084bf0608b6f
     layerID: 71
     mosaicPosition: {x: 2249, y: 1913}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
   - name: vine TR
     spriteName: vine TR
     isGroup: 0
@@ -884,6 +972,9 @@ ScriptedImporter:
     spriteID: 67ad963b2c5f06744842518349688717
     layerID: 72
     mosaicPosition: {x: 2548, y: 1876}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
   - name: vine TL
     spriteName: vine TL
     isGroup: 0
@@ -891,6 +982,9 @@ ScriptedImporter:
     spriteID: 90b19a5d22d8c79449def0736de107e5
     layerID: 73
     mosaicPosition: {x: 2069, y: 1633}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
   - name: vine BL
     spriteName: vine BL
     isGroup: 0
@@ -898,13 +992,14 @@ ScriptedImporter:
     spriteID: 734e5e88cc59bf24ca673b90f0da9163
     layerID: 59
     mosaicPosition: {x: 1651, y: 1633}
-  characterData:
-    bones: []
-    parts: []
-    dimension: {x: 0, y: 0}
-    characterGroups: []
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  sharedRigPSDLayers: []
+  pSDLayerImportSetting: []
   generateGOHierarchy: 0
   textureAssetName: Boss 1 - Stone Prodigious Texture
   prefabAssetName: Boss 1 - Stone Prodigious Prefab
   spriteLibAssetName: Boss 1 - Stone Prodigious Sprite Lib
+  skeletonAssetName: 
   secondarySpriteTextures: []

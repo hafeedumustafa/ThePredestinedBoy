@@ -25,6 +25,7 @@ ScriptedImporter:
     streamingMipmaps: 1
     streamingMipmapsPriority: 0
     vTOnly: 0
+    ignoreMasterTextureLimit: 0
     nPOTScale: 1
     sRGBTexture: 1
     spriteMode: 2
@@ -46,6 +47,7 @@ ScriptedImporter:
     flipbookRows: 0
     flipbookColumns: 0
     ignorePngGamma: 0
+    cookieMode: 0
     filterMode: 2
     aniso: 0
     mipBias: 0
@@ -79,7 +81,6 @@ ScriptedImporter:
       width: 0
       height: 0
     spriteID: 
-    internalID: 0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -89,6 +90,7 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: 0, y: 0}
+    spritePosition: {x: 0, y: 0}
   mosaicSpriteImportData: []
   rigSpriteImportData:
   - name: Layer 5 copy
@@ -103,7 +105,6 @@ ScriptedImporter:
       width: 488
       height: 1200
     spriteID: e605b662af46db646931153d79120e2d
-    internalID: 0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -112,7 +113,8 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -770, y: -61}
+    uvTransform: {x: 4, y: 4}
+    spritePosition: {x: 774, y: 65}
   - name: Layer 5
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -125,7 +127,6 @@ ScriptedImporter:
       width: 488
       height: 1200
     spriteID: 6d0fb28124859ba4db8c8cef7f898181
-    internalID: 0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -134,7 +135,21 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 476, y: -61}
+    uvTransform: {x: 500, y: 4}
+    spritePosition: {x: 24, y: 65}
+  characterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+    boneReadOnly: 0
+  sharedRigSpriteImportData: []
+  sharedRigCharacterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+    boneReadOnly: 0
   platformSettings:
   - name: DefaultTexturePlatform
     overridden: 0
@@ -170,21 +185,19 @@ ScriptedImporter:
     allowsAlphaSplitting: 0
     androidETC2FallbackOverride: 0
   mosaicLayers: 1
+  characterMode: 1
   documentPivot: {x: 0, y: 0}
   documentAlignment: 7
   importHiddenLayers: 0
-  importedTextureWidth: 512
-  importedTextureHeight: 1024
-  documentSize: {x: 1372, y: 1330}
+  layerMappingOption: 2
+  generatePhysicsShape: 0
   paperDollMode: 0
   keepDupilcateSpriteName: 0
+  skeletonAssetReferenceID: 
   spriteCategoryList:
     categories: []
-  textureActualWidth: 1024
-  textureActualHeight: 2048
   spritePackingTag: 
   resliceFromLayer: 0
-  characterMode: 1
   mosaicPSDLayers: []
   rigPSDLayers:
   - name: Layer 5 copy
@@ -194,6 +207,9 @@ ScriptedImporter:
     spriteID: e605b662af46db646931153d79120e2d
     layerID: 17
     mosaicPosition: {x: 4, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
   - name: Layer 5
     spriteName: Layer 5
     isGroup: 0
@@ -201,13 +217,24 @@ ScriptedImporter:
     spriteID: 6d0fb28124859ba4db8c8cef7f898181
     layerID: 12
     mosaicPosition: {x: 500, y: 4}
-  characterData:
-    bones: []
-    parts: []
-    dimension: {x: 0, y: 0}
-    characterGroups: []
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Background
+    spriteName: 
+    isGroup: 0
+    parentIndex: -1
+    spriteID: e0b5cd3c838ac1f45b39e1e0528a0a77
+    layerID: 1
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  sharedRigPSDLayers: []
+  pSDLayerImportSetting: []
   generateGOHierarchy: 0
   textureAssetName: Waterfall Texture
   prefabAssetName: Waterfall Prefab
   spriteLibAssetName: Waterfall Sprite Lib
+  skeletonAssetName: 
   secondarySpriteTextures: []

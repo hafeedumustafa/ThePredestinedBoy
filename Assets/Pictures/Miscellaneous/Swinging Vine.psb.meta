@@ -25,6 +25,7 @@ ScriptedImporter:
     streamingMipmaps: 1
     streamingMipmapsPriority: 0
     vTOnly: 0
+    ignoreMasterTextureLimit: 0
     nPOTScale: 1
     sRGBTexture: 1
     spriteMode: 2
@@ -46,6 +47,7 @@ ScriptedImporter:
     flipbookRows: 0
     flipbookColumns: 0
     ignorePngGamma: 0
+    cookieMode: 0
     filterMode: 1
     aniso: 1
     mipBias: 0
@@ -79,7 +81,6 @@ ScriptedImporter:
       width: 0
       height: 0
     spriteID: 
-    internalID: 0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -89,6 +90,7 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: 0, y: 0}
+    spritePosition: {x: 0, y: 0}
   mosaicSpriteImportData: []
   rigSpriteImportData:
   - name: Layer 1
@@ -103,7 +105,6 @@ ScriptedImporter:
       width: 316
       height: 290
     spriteID: 3fabf4a6432206a409690bdc38d24c83
-    internalID: 0
     spriteBone: []
     spriteOutline: []
     vertices:
@@ -562,7 +563,8 @@ ScriptedImporter:
     - {x: 0, y: 29}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -376, y: -48}
+    uvTransform: {x: 4, y: 302}
+    spritePosition: {x: 380, y: 350}
   - name: Leaves
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -575,7 +577,6 @@ ScriptedImporter:
       width: 339
       height: 290
     spriteID: 826542a303bb1024b803f43fb4744a71
-    internalID: 0
     spriteBone: []
     spriteOutline: []
     vertices:
@@ -1098,40 +1099,8 @@ ScriptedImporter:
     - {x: 28, y: 33}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -20, y: 4}
-  platformSettings: []
-  mosaicLayers: 1
-  documentPivot: {x: 0, y: 0}
-  documentAlignment: 7
-  importHiddenLayers: 0
-  importedTextureWidth: 512
-  importedTextureHeight: 1024
-  documentSize: {x: 749, y: 666}
-  paperDollMode: 0
-  keepDupilcateSpriteName: 0
-  spriteCategoryList:
-    categories: []
-  textureActualWidth: 512
-  textureActualHeight: 1024
-  spritePackingTag: 
-  resliceFromLayer: 0
-  characterMode: 1
-  mosaicPSDLayers: []
-  rigPSDLayers:
-  - name: Layer 1
-    spriteName: Layer 1
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 3fabf4a6432206a409690bdc38d24c83
-    layerID: 7
-    mosaicPosition: {x: 4, y: 302}
-  - name: Leaves
-    spriteName: Leaves
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 826542a303bb1024b803f43fb4744a71
-    layerID: 6
-    mosaicPosition: {x: 4, y: 4}
+    uvTransform: {x: 4, y: 4}
+    spritePosition: {x: 24, y: 0}
   characterData:
     bones: []
     parts:
@@ -1155,8 +1124,56 @@ ScriptedImporter:
       order: 0
     dimension: {x: 0, y: 0}
     characterGroups: []
+    boneReadOnly: 0
+  sharedRigSpriteImportData: []
+  sharedRigCharacterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+    boneReadOnly: 0
+  platformSettings: []
+  mosaicLayers: 1
+  characterMode: 1
+  documentPivot: {x: 0, y: 0}
+  documentAlignment: 7
+  importHiddenLayers: 0
+  layerMappingOption: 2
+  generatePhysicsShape: 0
+  paperDollMode: 0
+  keepDupilcateSpriteName: 0
+  skeletonAssetReferenceID: 
+  spriteCategoryList:
+    categories: []
+  spritePackingTag: 
+  resliceFromLayer: 0
+  mosaicPSDLayers: []
+  rigPSDLayers:
+  - name: Layer 1
+    spriteName: Layer 1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 3fabf4a6432206a409690bdc38d24c83
+    layerID: 7
+    mosaicPosition: {x: 4, y: 302}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Leaves
+    spriteName: Leaves
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 826542a303bb1024b803f43fb4744a71
+    layerID: 6
+    mosaicPosition: {x: 4, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  sharedRigPSDLayers: []
+  pSDLayerImportSetting: []
   generateGOHierarchy: 0
   textureAssetName: Swinging Vine Texture
   prefabAssetName: Swinging Vine Prefab
   spriteLibAssetName: Swinging Vine Sprite Lib
+  skeletonAssetName: 
   secondarySpriteTextures: []

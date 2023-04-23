@@ -51,7 +51,7 @@ TextureImporter:
       213: 8831489226419040829
     second: GettingSwordTiles_15
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -72,6 +72,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -110,6 +111,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -125,6 +127,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -484,6 +498,23 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      GettingSwordTiles_0: -6239113595515646737
+      GettingSwordTiles_1: -8233533579576020584
+      GettingSwordTiles_10: -3838503578403410901
+      GettingSwordTiles_11: 8230245408734664571
+      GettingSwordTiles_12: -8247308492429536049
+      GettingSwordTiles_13: -5461665311712807482
+      GettingSwordTiles_14: 6997298284530806006
+      GettingSwordTiles_15: 8831489226419040829
+      GettingSwordTiles_2: -7328311593533733576
+      GettingSwordTiles_3: 2730773291941104522
+      GettingSwordTiles_4: -2343032348795537414
+      GettingSwordTiles_5: -3464846073138472261
+      GettingSwordTiles_6: 6802032887537647983
+      GettingSwordTiles_7: -1877999171724224721
+      GettingSwordTiles_8: 8316336279168916535
+      GettingSwordTiles_9: -1745784802035146863
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 1
