@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class fogSpawner : MonoBehaviour
 {
-    [SerializeField]List<GameObject> Clouds = new List<GameObject>();
+    List<GameObject> Clouds = new List<GameObject>();
     public bool isFog;//if its a cloud or fog
     private Color32 colour;
     public GameObject[] CloudPrefabs;

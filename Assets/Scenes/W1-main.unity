@@ -4963,7 +4963,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc85aa585a90e48459b9b9ef1e5d4aec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Clouds: []
   isFog: 1
   CloudPrefabs:
   - {fileID: 529294387912934048, guid: ae1e0c73e4dbe4f4a8d7984255feef9a, type: 3}
@@ -9439,116 +9438,6 @@ CompositeCollider2D:
   m_GenerationType: 0
   m_EdgeRadius: 0
   m_ColliderPaths:
-  - m_Collider: {fileID: 2094878126}
-    m_ColliderPaths:
-    - - X: -13463382
-        Y: 36849772
-      - X: -13463382
-        Y: 40909772
-      - X: -15573089
-        Y: 40909479
-      - X: -15572796
-        Y: 36849772
-  - m_Collider: {fileID: 1707422846}
-    m_ColliderPaths:
-    - - X: -13463382
-        Y: 33758220
-      - X: -13463382
-        Y: 36858216
-      - X: -15573089
-        Y: 36857923
-      - X: -15572796
-        Y: 33758220
-  - m_Collider: {fileID: 1348852935}
-    m_ColliderPaths:
-    - - X: -13463382
-        Y: 29938356
-      - X: -13463382
-        Y: 33838356
-      - X: -15573089
-        Y: 33838063
-      - X: -15572796
-        Y: 29938356
-  - m_Collider: {fileID: 506419870}
-    m_ColliderPaths:
-    - - X: -13463382
-        Y: 26095020
-      - X: -13463382
-        Y: 29995020
-      - X: -15573089
-        Y: 29994727
-      - X: -15572796
-        Y: 26095020
-  - m_Collider: {fileID: 752737713}
-    m_ColliderPaths:
-    - - X: -13463382
-        Y: 22259920
-      - X: -13463382
-        Y: 26159918
-      - X: -15573089
-        Y: 26159625
-      - X: -15572796
-        Y: 22259920
-  - m_Collider: {fileID: 900286212}
-    m_ColliderPaths:
-    - - X: -13463382
-        Y: 19287368
-      - X: -13463382
-        Y: 22307368
-      - X: -15573089
-        Y: 22307075
-      - X: -15572796
-        Y: 19287368
-  - m_Collider: {fileID: 548015710}
-    m_ColliderPaths:
-    - - X: -13463382
-        Y: 15357511
-      - X: -13463382
-        Y: 19257510
-      - X: -15573089
-        Y: 19257217
-      - X: -15572796
-        Y: 15357511
-  - m_Collider: {fileID: 1056153251}
-    m_ColliderPaths:
-    - - X: -13463382
-        Y: 11514173
-      - X: -13463382
-        Y: 15414172
-      - X: -15573089
-        Y: 15413879
-      - X: -15572796
-        Y: 11514173
-  - m_Collider: {fileID: 1755128635}
-    m_ColliderPaths:
-    - - X: -13463382
-        Y: 7808985
-      - X: -13463382
-        Y: 11708986
-      - X: -15573089
-        Y: 11708693
-      - X: -15572796
-        Y: 7808985
-  - m_Collider: {fileID: 697619853}
-    m_ColliderPaths:
-    - - X: -13463382
-        Y: 4691431
-      - X: -13463382
-        Y: 7901431
-      - X: -15573089
-        Y: 7901139
-      - X: -15572796
-        Y: 4691431
-  - m_Collider: {fileID: 108869847}
-    m_ColliderPaths:
-    - - X: -13463421
-        Y: 906571
-      - X: -13463421
-        Y: 4806571
-      - X: -15573127
-        Y: 4806279
-      - X: -15572834
-        Y: 906571
   - m_Collider: {fileID: 174463914}
     m_ColliderPaths:
     - - X: -13463421
@@ -9559,6 +9448,116 @@ CompositeCollider2D:
         Y: 1247938
       - X: -15572835
         Y: -4001769
+  - m_Collider: {fileID: 108869847}
+    m_ColliderPaths:
+    - - X: -13463421
+        Y: 906571
+      - X: -13463421
+        Y: 4806571
+      - X: -15573127
+        Y: 4806279
+      - X: -15572834
+        Y: 906571
+  - m_Collider: {fileID: 697619853}
+    m_ColliderPaths:
+    - - X: -13463382
+        Y: 4691431
+      - X: -13463382
+        Y: 7901431
+      - X: -15573089
+        Y: 7901139
+      - X: -15572796
+        Y: 4691431
+  - m_Collider: {fileID: 1755128635}
+    m_ColliderPaths:
+    - - X: -13463382
+        Y: 7808985
+      - X: -13463382
+        Y: 11708986
+      - X: -15573089
+        Y: 11708693
+      - X: -15572796
+        Y: 7808985
+  - m_Collider: {fileID: 1056153251}
+    m_ColliderPaths:
+    - - X: -13463382
+        Y: 11514173
+      - X: -13463382
+        Y: 15414172
+      - X: -15573089
+        Y: 15413879
+      - X: -15572796
+        Y: 11514173
+  - m_Collider: {fileID: 548015710}
+    m_ColliderPaths:
+    - - X: -13463382
+        Y: 15357511
+      - X: -13463382
+        Y: 19257510
+      - X: -15573089
+        Y: 19257217
+      - X: -15572796
+        Y: 15357511
+  - m_Collider: {fileID: 900286212}
+    m_ColliderPaths:
+    - - X: -13463382
+        Y: 19287368
+      - X: -13463382
+        Y: 22307368
+      - X: -15573089
+        Y: 22307075
+      - X: -15572796
+        Y: 19287368
+  - m_Collider: {fileID: 752737713}
+    m_ColliderPaths:
+    - - X: -13463382
+        Y: 22259920
+      - X: -13463382
+        Y: 26159918
+      - X: -15573089
+        Y: 26159625
+      - X: -15572796
+        Y: 22259920
+  - m_Collider: {fileID: 506419870}
+    m_ColliderPaths:
+    - - X: -13463382
+        Y: 26095020
+      - X: -13463382
+        Y: 29995020
+      - X: -15573089
+        Y: 29994727
+      - X: -15572796
+        Y: 26095020
+  - m_Collider: {fileID: 1348852935}
+    m_ColliderPaths:
+    - - X: -13463382
+        Y: 29938356
+      - X: -13463382
+        Y: 33838356
+      - X: -15573089
+        Y: 33838063
+      - X: -15572796
+        Y: 29938356
+  - m_Collider: {fileID: 1707422846}
+    m_ColliderPaths:
+    - - X: -13463382
+        Y: 33758220
+      - X: -13463382
+        Y: 36858216
+      - X: -15573089
+        Y: 36857923
+      - X: -15572796
+        Y: 33758220
+  - m_Collider: {fileID: 2094878126}
+    m_ColliderPaths:
+    - - X: -13463382
+        Y: 36849772
+      - X: -13463382
+        Y: 40909772
+      - X: -15573089
+        Y: 40909479
+      - X: -15572796
+        Y: 36849772
   m_CompositePaths:
     m_Paths:
     - - {x: -1.3463675, y: 1.9287368}
@@ -29978,7 +29977,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc85aa585a90e48459b9b9ef1e5d4aec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Clouds: []
   isFog: 0
   CloudPrefabs:
   - {fileID: 7678329642990895391, guid: 361483cf4aa215d44b37f63d9408f524, type: 3}
@@ -33428,7 +33426,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc85aa585a90e48459b9b9ef1e5d4aec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Clouds: []
   isFog: 0
   CloudPrefabs:
   - {fileID: 7678329642990895391, guid: 361483cf4aa215d44b37f63d9408f524, type: 3}

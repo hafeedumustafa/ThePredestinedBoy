@@ -5737,7 +5737,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 711
+  m_SortingOrder: 714
   m_Sprite: {fileID: 21300000, guid: 851ea59d9c817b3429e167f2a32e5501, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -5766,7 +5766,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.84, y: 6.97}
+    oldSize: {x: 1.84, y: 8.57}
     newSize: {x: 1.84, y: 6.97}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -5877,8 +5877,8 @@ MonoBehaviour:
   - {fileID: 6197003721210924673}
   - {fileID: 1995346481826804439}
   m_Bounds:
-    m_Center: {x: -0.07073367, y: -0.044719815, z: 0}
-    m_Extent: {x: 1.0339952, y: 1.6637647, z: 0}
+    m_Center: {x: -4.9695415, y: 0.072811365, z: 0}
+    m_Extent: {x: 1.6870542, y: 1.1896982, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
 --- !u!1 &3484516761266903202
@@ -6197,13 +6197,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4154964355954137420}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0.72145814, w: 0.6924581}
   m_LocalPosition: {x: 2.47, y: 6.78, z: 0}
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_Children: []
   m_Father: {fileID: 1419890164431857067}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 92.35}
 --- !u!212 &4154964355954137422
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6355,8 +6355,8 @@ MonoBehaviour:
   m_BoneTransforms:
   - {fileID: 1995346481826804439}
   m_Bounds:
-    m_Center: {x: -0.0010195374, y: -0.085715055, z: 0}
-    m_Extent: {x: 0.92820996, y: 1.0494449, z: 0}
+    m_Center: {x: -2.6054494, y: -0.07767385, z: 0}
+    m_Extent: {x: 1.1920772, y: 0.9094665, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
 --- !u!1 &4453639821380873681
@@ -11756,6 +11756,7 @@ MonoBehaviour:
   ArrowPref: {fileID: 1730315489390993083, guid: 64a356f2b5f633c439a731d7df1d187e,
     type: 3}
   Arrow: {fileID: 3957784885854201935}
+  weaponEquiped: 0
   speed: 3
   initialspeed: 0
   HorizontalMovement: 0

@@ -218,6 +218,11 @@ public class vine : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && !vinejump) {
             playerManagerFV.rb.velocity = Vector2.up * playerManagerFV.JumpForce;
             vinejump = true;
+            // stop animation
+            
+            playerManagerFV.animator.SetBool("OnVine", false);
+
+            playerManagerFV.rb.gravityScale = 1f;
         }
 
         else if (Input.GetKey(KeyCode.Space) && vinejump) {
@@ -227,13 +232,15 @@ public class vine : MonoBehaviour
                 playerManagerFV.JumpTimer -= Time.deltaTime;
                 playerManagerFV.JumpForce += 0.015f;
             } else {
-            vinejump = false;
-            playerManagerFV.JumpTimer = playerManagerFV.OriginalJumpTimer;
-            playerManagerFV.JumpForce = playerManagerFV.OriginalJumpForce;
+                
+            
+                vinejump = false;
+                playerManagerFV.JumpTimer = playerManagerFV.OriginalJumpTimer;
+                playerManagerFV.JumpForce = playerManagerFV.OriginalJumpForce;
             }
             
         } 
-
+        
         if (Input.GetKeyUp(KeyCode.Space)) {
             vinejump = false;
             playerManagerFV.JumpTimer = playerManagerFV.OriginalJumpTimer;

@@ -17,6 +17,7 @@ public class PlayerManagerFV : MonoBehaviour
     public float deathY;
     public GameObject ArrowPref;
     public GameObject Arrow;
+    public int weaponEquiped; // 0 is none, 1 is sword, 2 is bow
     //movement
     public float speed, initialspeed;
     public float HorizontalMovement, VerticalMovement;
@@ -101,9 +102,11 @@ public class PlayerManagerFV : MonoBehaviour
             GameManager.instance.Death();
         }
 
-        if (Input.GetMouseButtonDown(0) && CanMove == true && InputByKeyboard && Time.timeScale != 0f) {
+        if (Input.GetMouseButtonDown(0) && weaponEquiped != 0 && CanMove == true && InputByKeyboard && Time.timeScale != 0f) {
             animator.SetBool("Attack", true);
         }
+        
+        weaponEquiped = SaveManager.instance.activeSave.selectedWeapon;
 
     }
 

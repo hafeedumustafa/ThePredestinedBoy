@@ -96,7 +96,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void SetAOK(int Key) {
+    public void SetAOK(int Key) { // set amount of keys
         SaveManager.instance.activeSave.keys += Key;
         KeysText.GetComponent<TextMeshProUGUI>().text = SaveManager.instance.activeSave.keys.ToString();
     }
