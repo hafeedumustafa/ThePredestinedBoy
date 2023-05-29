@@ -167,6 +167,7 @@ public class PlayerManagerFV : MonoBehaviour
     void Jump(){
         if (Input.GetKeyDown(KeyCode.Space) && m_isGrounded) {
             isJumping = true;
+            animator.SetBool("OnVine", false);
             animator.SetBool("hitSpace", true);
             rb.velocity = Vector2.up * JumpForce;
         }
