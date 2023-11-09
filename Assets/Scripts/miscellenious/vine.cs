@@ -5,7 +5,7 @@ using UnityEngine;
 public class vine : MonoBehaviour
 {
     
-    private bool OnVine = false;
+    [SerializeField]private bool OnVine = false;
     [SerializeField]private bool vinejump = false;
     [SerializeField]public bool TouchingVine = false;
     public bool Swingable;
@@ -27,7 +27,12 @@ public class vine : MonoBehaviour
     [SerializeField]private float addTime;
     int initialDirection;
     
-
+    void Update()
+    {
+        
+            if(!Swingable)
+                JumpOnVine();
+    }
     void FixedUpdate()
     {
         if(TouchingVine == true)
@@ -50,8 +55,6 @@ public class vine : MonoBehaviour
             }
 
 
-            if(!Swingable)
-                JumpOnVine();
 
             //Swinging Vine
 
@@ -218,6 +221,7 @@ public class vine : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && !vinejump) {
             playerManagerFV.rb.velocity = Vector2.up * playerManagerFV.JumpForce;
             vinejump = true;
+            OnVine = false;
             // stop animation
             
             playerManagerFV.animator.SetBool("OnVine", false);
