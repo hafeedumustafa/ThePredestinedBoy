@@ -5,7 +5,7 @@ using UnityEngine;
 public class vine : MonoBehaviour
 {
     
-    [SerializeField]private bool OnVine = false;
+    private bool OnVine = false;
     [SerializeField]private bool vinejump = false;
     [SerializeField]public bool TouchingVine = false;
     public bool Swingable;
@@ -27,12 +27,7 @@ public class vine : MonoBehaviour
     [SerializeField]private float addTime;
     int initialDirection;
     
-    void Update()
-    {
-        
-            if(!Swingable)
-                JumpOnVine();
-    }
+
     void FixedUpdate()
     {
         if(TouchingVine == true)
@@ -55,42 +50,43 @@ public class vine : MonoBehaviour
             }
 
 
+            if(!Swingable)
+                JumpOnVine();
 
             //Swinging Vine
+                if(OnVine && Swingable && !animator.GetBool("VineIsSwinging")) {
+                    animator.SetBool("VineIsSwinging", true);
+                    playerManagerFV.CanMove = false;
+                    //targetJoint.enabled = true;
 
-            if(OnVine && Swingable && !animator.GetBool("VineIsSwinging")) {
-                animator.SetBool("VineIsSwinging", true);
-                playerManagerFV.CanMove = false;
-                //targetJoint.enabled = true;
-
-                float closestBone = 10000;
-                for(int i = 0; i < ClosestBones.Count; i++) {
-                    if(Vector3.Distance(ClosestBones[i].transform.position, playerManagerFV.gameObject.transform.position) < closestBone)
-                    {
-                        BoneOfCollision = ClosestBones[i].transform;
+                    float closestBone = 10000;
+                    for(int i = 0; i < ClosestBones.Count; i++) {
+                        if(Vector3.Distance(ClosestBones[i].transform.position, playerManagerFV.gameObject.transform.position) < closestBone)
+                        {
+                            BoneOfCollision = ClosestBones[i].transform;
+                        }
                     }
-                }
 
 
-                if(playerManagerFV.HorizontalMovement < 0) {
-                    initialDirection = -1;
-                    oldRotation = 0.1f;
-                } else {
-                    initialDirection = 1;
-                    oldRotation = -0.1f;
+                    if(playerManagerFV.HorizontalMovement < 0) {
+                        initialDirection = -1;
+                        oldRotation = 0.1f;
+                    } else {
+                        initialDirection = 1;
+                        oldRotation = -0.1f;
 
-                }
+                    }
 
-                animator.Play("3SwingingVines", -1, 0.5f);
+                    animator.Play("3SwingingVines", -1, 0.5f);
 
-                float playerVel = playerManagerFV.Velocity.x * 7.5f;
-                if(playerVel > 1)
-                    playerVel = 1;
-                
-                speed = playerVel * -initialDirection;
+                    float playerVel = playerManagerFV.Velocity.x * 7.5f;
+                    if(playerVel > 1)
+                        playerVel = 1;
+                    
+                    speed = playerVel * -initialDirection;
 
 
-            }
+                } 
 
 
         }
@@ -215,15 +211,12 @@ public class vine : MonoBehaviour
 
     }
 
-
+    // this method is only for stationary vines.
     void JumpOnVine()
     {
         if (Input.GetKeyDown(KeyCode.Space) && !vinejump) {
             playerManagerFV.rb.velocity = Vector2.up * playerManagerFV.JumpForce;
-            vinejump = true;
-            OnVine = false;
-            // stop animation
-            
+            vinejump = true; // this makes the game realized we are jumping
             playerManagerFV.animator.SetBool("OnVine", false);
 
             playerManagerFV.rb.gravityScale = 1f;
@@ -234,21 +227,35 @@ public class vine : MonoBehaviour
             {
                 playerManagerFV.rb.velocity = Vector2.up * playerManagerFV.JumpForce;
                 playerManagerFV.JumpTimer -= Time.deltaTime;
-                playerManagerFV.JumpForce += 0.015f;
+                playerManagerFV.JumpForce += 0.015f; 
             } else {
+                
+                
+                vinejump = false;
+                playerManagerFV.JumpTimer = playerManagerFV.OriginalJumpTimer;
+                playerManagerFV.JumpForce = playerManagerFV.OriginalJumpForce;
+            }
+            
+        } else if (vinejump){
                 
             
                 vinejump = false;
                 playerManagerFV.JumpTimer = playerManagerFV.OriginalJumpTimer;
                 playerManagerFV.JumpForce = playerManagerFV.OriginalJumpForce;
             }
-            
-        } 
         
         if (Input.GetKeyUp(KeyCode.Space)) {
             vinejump = false;
             playerManagerFV.JumpTimer = playerManagerFV.OriginalJumpTimer;
             playerManagerFV.JumpForce = playerManagerFV.OriginalJumpForce;
+        }
+    }
+
+    void stopVineAnimation()
+    {
+        if(!animator.GetBool("VineIsSwinging"))
+        {
+            animator.StopPlayback();
         }
     }
 
